@@ -3,13 +3,7 @@
     <Header/>
     <div class="content-box">
       <div class="main-box">
-        <div class='card-item' v-for='item in artList' :key='item.artId'>
-          <a class='title'> {{ item.title}}</a>
-          <div class='content-body'>
-            <img :src="item.img" alt="" class='img' v-if='item.img' > 
-            <p class='text'> {{ item.content}} </p>
-          </div>
-        </div>
+        music
       </div>
       <div class="sidebar-box">
         <div class="person">
@@ -44,78 +38,5 @@ export default {
 </script>
 
 <style lang='scss'>
-.home{
-  .content-box{
-    display: flex;
-    align-items: flex-start;
-    width: 1000px;
-    padding: 0 16px;
-    margin: 10px auto;
-    .main-box{
-      flex-shrink: 0;
-      margin-right: 10px;
-      margin-bottom: 0;
-      width: 694px;
-      background: #fff;
-      .card-item{
-        height: 160px ;
-        border-bottom: 1px solid #F0F2F7;
-        padding: 20px;
-        .title{
-          font-size: 18px;
-          font-weight: 600;
-          font-synthesis: style;
-          line-height: 1.6;
-          color: #1A1A1A;
-          margin: -4px 0;
-          cursor: pointer;
-          &:hover{
-            color: #175199;
-          }
-        }
-        .content-body{
-          .img{
-            position: relative;
-            width: 190px;
-            height: 105px;
-            margin-top: -2px;
-            margin-right: 18px;
-            margin-bottom: 4px;
-            float: left;
-            overflow: hidden;
-            background-position: center;
-            background-size: cover;
-            border-radius: 4px;
-          }
-          .text{
-            line-height: 1.67;
-            cursor: pointer;
-            overflow: hidden; 
-            -webkit-line-clamp: 4; 
-            display: -webkit-box; 
-            -webkit-box-orient: vertical;
-            &:hover{
-              color: #646464;
-            }
-          }
-        }
-      }
-    }
-    .sidebar-box{
-      flex: 1 1;
-      font-size: 14px;
-      .person{
-        margin-bottom: 10px;
-        background: #FFFFFF;
-        overflow: hidden;
-        border-radius: 2px;
-        box-shadow: 0 1px 3px rgba(26, 26, 26, 0.1);
-        box-sizing: border-box;
-        .img{
-          width: 100%;
-        }
-      }
-    }
-  }
-}
+
 </style>

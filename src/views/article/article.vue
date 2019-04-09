@@ -3,13 +3,7 @@
     <Header/>
     <div class="content-box">
       <div class="main-box">
-        <div class='card-item' v-for='item in artList' :key='item.artId'>
-          <a class='title'> {{ item.title}}</a>
-          <div class='content-body'>
-            <img :src="item.img" alt="" class='img' v-if='item.img' > 
-            <p class='text'> {{ item.content}} </p>
-          </div>
-        </div>
+        article
       </div>
       <div class="sidebar-box">
         <div class="person">
