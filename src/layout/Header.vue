@@ -3,7 +3,7 @@
     <div class='header-inner'>
       <img :src='logoImg' alt='logo' class='logo-img'>
       <nav class='navigation' role='navigation'>
-        <router-link to="/"  class='nav-item'>首页</router-link>
+        <router-link to="/" exact  class='nav-item'>首页</router-link>
         <router-link to="/tech"  class='nav-item'>技术</router-link>
         <router-link to="/music" class='nav-item'>音乐</router-link>
         <router-link to="/article" class='nav-item'>好文搬运</router-link>
